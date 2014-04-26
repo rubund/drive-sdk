@@ -1,0 +1,5 @@
+drive-sdk (1gitf127c1d-1) unstable; urgency=low
+
+  * Initial debian package
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Sat, 26 Apr 2014 13:35:49 +0200
