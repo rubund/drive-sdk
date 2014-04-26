@@ -1,0 +1,15 @@
+Index: drive-sdk/CMakeLists.txt
+===================================================================
+--- drive-sdk.orig/CMakeLists.txt	2014-04-26 13:11:26.592875664 +0200
++++ drive-sdk/CMakeLists.txt	2014-04-26 14:54:45.707751876 +0200
+@@ -4,10 +4,6 @@
+ 
+ set(CMAKE_MODULE_PATH ${drivekit_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
+ 
+-# Set the default install path to be './build/dist'
+-if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT) 
+-    set(CMAKE_INSTALL_PREFIX ${PROJECT_BINARY_DIR}/dist CACHE PATH "drive-sdk install prefix" FORCE) 
+-endif(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT) 
+ 
+ OPTION( BUILD_EXAMPLES                "Build example apps"                OFF )
+ 

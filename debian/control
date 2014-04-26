@@ -1,14 +1,22 @@
 Source: drive-sdk
-Section: unknown
 Priority: optional
 Maintainer: Ruben Undheim <ruben.undheim@gmail.com>
 Build-Depends: debhelper (>= 9), cmake
 Standards-Version: 3.9.5
+Section: libs
 Homepage: http://developer.anki.com/drive-sdk/
 #Vcs-Git: https://github.com/anki/drive-sdk.git
 
-Package: drive-sdk
+Package: libankidrive-dev
+Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Anki Drive SDK
+Depends:
+Description: Anki Drive SDK - development files
  Open source SDK for controlling Anki Drive
+
+Package: libankidrive-examples
+Section: misc
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Anki Drive SDK - example programs
+ Example programs for the Anki Drive SDK 
