@@ -1,4 +1,5 @@
 usr/lib/libankidrive.a
+usr/include/ankidrive.h
 usr/include/ankidrive/advertisement.h
 usr/include/ankidrive/common.h
 usr/include/ankidrive/protocol.h

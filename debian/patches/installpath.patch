@@ -1,7 +1,7 @@
 Index: drive-sdk/CMakeLists.txt
 ===================================================================
---- drive-sdk.orig/CMakeLists.txt	2014-04-26 13:11:26.592875664 +0200
-+++ drive-sdk/CMakeLists.txt	2014-04-26 14:54:45.707751876 +0200
+--- drive-sdk.orig/CMakeLists.txt	2014-04-26 16:35:01.693402603 +0200
++++ drive-sdk/CMakeLists.txt	2014-04-26 16:35:59.005403910 +0200
 @@ -4,10 +4,6 @@
  
  set(CMAKE_MODULE_PATH ${drivekit_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
@@ -13,3 +13,11 @@ Index: drive-sdk/CMakeLists.txt
  
  OPTION( BUILD_EXAMPLES                "Build example apps"                OFF )
  
+@@ -21,6 +17,7 @@
+ add_subdirectory(test)
+ 
+ install(DIRECTORY include/ankidrive DESTINATION include)
++install(FILES include/ankidrive.h DESTINATION include)
+ 
+ if (BUILD_EXAMPLES)
+     add_subdirectory(deps/bzle)
